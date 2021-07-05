@@ -13,6 +13,10 @@ body{
     height: 0px;
 }
 
+.title_bar > span{
+    color: white;
+}
+
 .profile_image_wrapper{
     width: 150px;
     height: 150px;
@@ -169,14 +173,15 @@ h2{
     }
 
     .title_bar{
-        display: block;
+        display: flex;
+        align-items: center;
         height: 50px;
         margin-bottom: 50px;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background-color: #2f2f2f;
+        background-color: #2f2f2f;        
     }
 
 }
