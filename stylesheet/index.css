@@ -7,6 +7,12 @@ body{
     padding: 0;
 }
 
+
+.title_bar{
+    display: none;
+    height: 0px;
+}
+
 .profile_image_wrapper{
     width: 150px;
     height: 150px;
@@ -19,6 +25,18 @@ body{
     height: 100%;
 }
 
+#menu_btn{
+    margin: 14px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/hamburger-menu-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #2f2f2f;
+}
+
+
 
 header{
     position: fixed;
@@ -30,6 +48,7 @@ header{
     text-align: center;
     padding: 50px 0;
     color: whitesmoke;
+    z-index: 5;
 }
 
 .wrapper{
@@ -130,4 +149,35 @@ header{
 
 h2{
     color: #444;
+}
+
+
+@media screen and (max-width: 1024px)  {
+    *{
+        transition: all 0.3s;
+    }
+    header{
+        left: -300px;
+    }
+
+    header.wide{
+        left: 0px;
+    }
+
+    .wrapper{
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .title_bar{
+        display: block;
+        height: 50px;
+        margin-bottom: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #2f2f2f;
+    }
+
 }

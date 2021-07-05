@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dev hoony portfolio</title>
 
     <link rel="stylesheet" href="stylesheet/index.css">
 </head>
@@ -13,8 +13,8 @@
 <body>
 
     <section>
+     
         <header>
-
             <div class="profile_image_wrapper">
                 <!-- <img class="profile_image" src="images/testimage.jpg" alt="profile image"> -->
                 <img class="profile_image" src="images/pengsoo_image.jpg" alt="profile image">
@@ -48,7 +48,7 @@
 
 
     <div class="wrapper">
-
+      
         <section>
             <div class="background_img_container">
                 <img class="background_img" src="images/top_background_image.jpg" alt="">
@@ -57,16 +57,20 @@
             <div class="section_content">
                 <h2>Introduction</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi accusantium quam aliquid ipsum consequuntur suscipit maxime veritatis illo beatae, hic voluptatem provident expedita. Consequuntur quaerat nemo unde ut repellendus quidem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi accusantium quam aliquid ipsum
+                    consequuntur suscipit maxime veritatis illo beatae, hic voluptatem provident expedita. Consequuntur
+                    quaerat nemo unde ut repellendus quidem.</p>
             </div>
-           
+
         </section>
 
         <section>
             <div class="section_content">
                 <h2>Things I Can Do</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestiae qui blanditiis autem praesentium. Velit ratione quis labore provident, odio porro ex ad sequi in eum. Iste quisquam error earum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestiae qui blanditiis autem
+                    praesentium. Velit ratione quis labore provident, odio porro ex ad sequi in eum. Iste quisquam error
+                    earum.</p>
             </div>
 
         </section>
@@ -84,7 +88,9 @@
 
             </div>
         </section>
-
+        <div class="title_bar">
+            <button id="menu_btn"></button>
+        </div>
     </div>
 
 
@@ -94,16 +100,35 @@
         const wrapper = document.querySelector('.wrapper');
         const section_list = wrapper.querySelectorAll('section');
         const head_menu_item = document.querySelectorAll('.head_menu_item');
+        const header = document.querySelector('header');
 
+        const title_bar = document.querySelector('.title_bar');
         for (let i = 0; i < head_menu_item.length; i++) {
             head_menu_item[i].addEventListener("click", e => {
-
-                // window.scrollTo(0, section_list[i].getBoundingClientRect().top);
-                window.scrollTo(0, section_list[i].offsetTop);
-
+                window.scrollTo(0, section_list[i].offsetTop - title_bar.clientHeight);
+                console.log(section_list[i].offsetTop + title_bar.clientHeight)
+                const header = document.querySelector('header');
+                header.classList.remove('wide');
             });
         }
 
+
+        const menu_btn = document.getElementById('menu_btn');
+        menu_btn.addEventListener("click", e => {
+            e.stopPropagation();
+            header.classList.add('wide');
+        });
+   
+
+        wrapper.addEventListener("click", e=>{
+            header.classList.remove('wide');
+        });
+
+        // section_list.forEach(element => {
+        //     element.addEventListener("click", e=>{
+        //         header.classList.remove('wide');
+        //     });
+        // })
 
     </script>
 </body>
