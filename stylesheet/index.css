@@ -100,7 +100,6 @@ header{
     filter: invert(100%);
 }
 .link_icon_btn.github{
-    /* background-image: url("../images/GitHub-Mark-32px.png"); */
     background-image: url("../images/GitHub-Mark-Light-32px.png");
 }
 .link_icon_btn.blog{

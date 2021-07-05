@@ -106,7 +106,6 @@
         for (let i = 0; i < head_menu_item.length; i++) {
             head_menu_item[i].addEventListener("click", e => {
                 window.scrollTo(0, section_list[i].offsetTop - title_bar.clientHeight);
-                console.log(section_list[i].offsetTop + title_bar.clientHeight)
                 const header = document.querySelector('header');
                 header.classList.remove('wide');
             });
