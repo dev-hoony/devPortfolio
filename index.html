@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,103 @@
 
     <link rel="stylesheet" href="stylesheet/index.css">
 </head>
+
 <body>
-    
+
     <section>
         <header>
 
             <div class="profile_image_wrapper">
-                <img class="profile_image" src="images/testimage.jpg" alt="profile image">
+                <!-- <img class="profile_image" src="images/testimage.jpg" alt="profile image"> -->
+                <img class="profile_image" src="images/pengsoo_image.jpg" alt="profile image">
             </div>
             <h1>dev hoony</h1>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <div class="head_menu_container">
+
+                <div class="head_menu_item">Introduction</div>
+                <div class="head_menu_item">Things I Can Do</div>
+                <div class="head_menu_item">Work Experience & Projects</div>
+                <div class="head_menu_item">Personal Experience & Projects</div>
+
+            </div>
+
+            <div class="link_btn_container">
+                <a href="#" class="link_icon_btn blog">
+                    <!-- blog -->
+                </a>
+                <a href="https://github.com/dev-hoony" class="link_icon_btn github">
+                    <!-- <span>Github</span> -->
+                </a>
+                <a href="#" class="link_icon_btn email">
+                    <!-- email -->
+                </a>
+            </div>
         </header>
 
     </section>
 
-    123456789
 
-    <div class="test">
-        234556
+    <div class="wrapper">
+
+        <section>
+            <div class="background_img_container">
+                <img class="background_img" src="images/top_background_image.jpg" alt="">
+            </div>
+
+            <div class="section_content">
+                <h2>Introduction</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi accusantium quam aliquid ipsum consequuntur suscipit maxime veritatis illo beatae, hic voluptatem provident expedita. Consequuntur quaerat nemo unde ut repellendus quidem.</p>
+            </div>
+           
+        </section>
+
+        <section>
+            <div class="section_content">
+                <h2>Things I Can Do</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestiae qui blanditiis autem praesentium. Velit ratione quis labore provident, odio porro ex ad sequi in eum. Iste quisquam error earum.</p>
+            </div>
+
+        </section>
+        <section>
+
+            <div class="section_content">
+                <h2>Work Experience & Projects</h2>
+
+            </div>
+        </section>
+        <section>
+
+            <div class="section_content">
+                <h2>Personal Experience & Projects</h2>
+
+            </div>
+        </section>
+
     </div>
-    
+
+
+
+    <script>
+
+        const wrapper = document.querySelector('.wrapper');
+        const section_list = wrapper.querySelectorAll('section');
+        const head_menu_item = document.querySelectorAll('.head_menu_item');
+
+        for (let i = 0; i < head_menu_item.length; i++) {
+            head_menu_item[i].addEventListener("click", e => {
+
+                // window.scrollTo(0, section_list[i].getBoundingClientRect().top);
+                window.scrollTo(0, section_list[i].offsetTop);
+
+            });
+        }
+
+
+    </script>
 </body>
+
 </html>
