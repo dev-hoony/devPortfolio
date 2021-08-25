@@ -160,6 +160,7 @@ header{
 h2{
     color: #444;
     margin: 12px 0;
+    word-break: keep-all;
 }
 
 h3{
@@ -175,6 +176,7 @@ h4{
 
 p{
     margin: 6px 0;
+    word-break: keep-all;
 }
 
 
@@ -298,6 +300,7 @@ p{
 }
 
 .spec_item{
+    display: inline-block;
     border: 1px solid black;
     box-sizing: border-box;
     padding: 1px 12px;
@@ -319,7 +322,7 @@ p{
 }
 
 .project_img_wrapper{
-    width: 450px;
+    width: 600px;
     margin: 5px;
 }
 
@@ -328,7 +331,7 @@ p{
     margin: 5px;
 }
 
-.project_image{
+.project_image{ 
     width: 100%;
     height: auto;
 }
@@ -377,6 +380,15 @@ p{
     .project_img_list.vertical{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .project_img_wrapper{
+        width: 100%;
+        max-width: 600px;
+    }
+    .project_img_wrapper.vertical{
+        width: 100%;
+        max-width: 250px;
     }
 }
 
