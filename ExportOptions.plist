@@ -6,15 +6,6 @@
 	<true/>
 	<key>destination</key>
 	<string>export</string>
-	<key>manifest</key>
-	<dict>
-		<key>appURL</key>
-		<string>https://drive.google.com/file/d/10_8P4PBzKBdz42N9Mpa7R5z8tv5GRt9u/view?usp=share_link</string>
-		<key>displayImageURL</key>
-		<string>https://mblogthumb-phinf.pstatic.net/MjAxOTExMjNfNjAg/MDAxNTc0NTE0Mjg4MDI4.Q-1rpSLFP2RBxfLfRJ-K1uI-wAEWzbezNhbuHmmHSC4g.srkDNDn48e-D9XnvZ_E4JWoEUJ1g5G1RojjUBzRKaW8g.PNG.sinnam88/%ED%8E%AD%EC%88%98_%EC%A7%A4_%EB%AA%A8%EC%9D%8C__%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4_(1).png?type=w800</string>
-		<key>fullSizeImageURL</key>
-		<string>https://mblogthumb-phinf.pstatic.net/MjAxOTExMjNfNjAg/MDAxNTc0NTE0Mjg4MDI4.Q-1rpSLFP2RBxfLfRJ-K1uI-wAEWzbezNhbuHmmHSC4g.srkDNDn48e-D9XnvZ_E4JWoEUJ1g5G1RojjUBzRKaW8g.PNG.sinnam88/%ED%8E%AD%EC%88%98_%EC%A7%A4_%EB%AA%A8%EC%9D%8C__%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4_(1).png?type=w800</string>
-	</dict>
 	<key>method</key>
 	<string>ad-hoc</string>
 	<key>signingStyle</key>
